@@ -3,7 +3,7 @@ katz_deli = []
 def line(katz_deli)
   deli_line = ""
 if katz_deli.length > 0 
-  katz_deli.each.with_index(1){|name, number| deli_line << " #{number}. #{name}" }
+  katz_deli.each.with_index(0){|name, number| deli_line << " #{number}. #{name}" }
   puts "The line is currently:#{deli_line}"
 else 
   puts "The line is currently empty."
